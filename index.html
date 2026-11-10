@@ -1,0 +1,1282 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="La Fábrica Tapicería - Restauración, tapicería y fabricación de muebles personalizados en Bogotá."
+    />
+    <title>La Fábrica: Tapicería</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header class="topbar">
+      <div class="container nav-wrap">
+        <a href="#inicio" class="brand">
+          <img src="Animacion 4 la fabrica.gif" alt="Logo-header" />
+          <div class="brand-text">
+            <strong>LA FÁBRICA</strong>
+            <span>TAPICERÍA</span>
+          </div>
+        </a>
+
+        <nav class="desktop-nav">
+          <a href="#nosotros">¿QUIÉNES SOMOS?</a>
+          <a href="#servicios">SERVICIOS</a>
+          <a href="#telas">TELAS</a>
+          <a href="#cotizar">COTIZA</a>
+          <a href="#contacto" class="nav-btn">CONTÁCTANOS</a>
+        </nav>
+
+        <button class="menu-btn" type="button" aria-label="Abrir menú">
+          ☰
+        </button>
+      </div>
+
+      <nav class="mobile-nav">
+        <a href="#nosotros">¿QUIÉNES SOMOS?</a>
+        <a href="#servicios">SERVICIOS</a>
+        <a href="#telas">TELAS</a>
+        <a href="#cotizar">COTIZA</a>
+        <a href="#contacto">CONTÁCTANOS</a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- HERO -->
+      <section class="hero" id="inicio">
+        <div class="hero-image">
+          <img src="https://i.ibb.co/hqMd25w/Sala.png" alt="Sofá restaurado" />
+        </div>
+
+        <div class="hero-copy">
+          <div>
+            <h1>TRANSFORMAMOS<br />TUS MUEBLES</h1>
+            <p>con comodidad, estilo y<br />calidad en cada detalle</p>
+            <a href="#cotizar" class="btn">COTIZA TU MUEBLE</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- NOSOTROS -->
+      <section class="section about" id="nosotros">
+        <div class="container">
+          <h2>¿QUIÉNES SOMOS?</h2>
+
+          <div class="about-grid">
+            <div class="about-text">
+              <p>
+                La Fábrica es una empresa de tapicería de muebles que busca
+                volver a darle vida a aquellos muebles que brindaron momentos
+                especiales, pero que ahora parecen anticuados o desgastados.
+              </p>
+              <p>
+                Arreglamos y renovamos distintos muebles del hogar para
+                volverles a dar vida y belleza, carpintería y tapicería para la
+                creación de muebles personalizados según el cliente.
+                Adicionalmente, fabricamos muebles personalizados de acuerdo con
+                las necesidades de cada cliente.
+              </p>
+            </div>
+
+            <img
+              class="about-img"
+              src="https://i.ibb.co/ccR6mQ9V/a2.png"
+              alt="About-image"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- PORTAFOLIO -->
+      <section class="section portfolio" id="servicios">
+        <div class="container">
+          <h2>NUESTRO DESEMPEÑO</h2>
+
+          <div class="works">
+            <article class="work-card">
+              <img src="https://i.ibb.co/4RsWLYQR/image.png" alt="Card-1" />
+            </article>
+            <article class="work-card">
+              <img src="https://i.ibb.co/Qjr56z06/image.png" alt="Card-2" />
+            </article>
+            <article class="work-card">
+              <img src="https://i.ibb.co/pB394Tnq/image.png" alt="Card-3" />
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- CATÁLOGO -->
+      <section class="section fabrics-section" id="telas">
+        <div class="container">
+          <div class="section-heading">
+            <span class="section-eyebrow">PERSONALIZA TU RESTAURACIÓN</span>
+            <h2>CATÁLOGO DE TELAS</h2>
+            <p>Explora nuestras 32 referencias organizadas por material.</p>
+          </div>
+
+          <div class="fabric-filters" id="catalogFilters">
+            <button
+              type="button"
+              class="fabric-filter active"
+              data-filter="Todos"
+            >
+              TODAS
+            </button>
+            <button type="button" class="fabric-filter" data-filter="Lino">
+              LINO
+            </button>
+            <button
+              type="button"
+              class="fabric-filter"
+              data-filter="Micro-Suede"
+            >
+              MICRO-SUEDE
+            </button>
+            <button type="button" class="fabric-filter" data-filter="Chicago">
+              CHICAGO
+            </button>
+            <button type="button" class="fabric-filter" data-filter="Chenille">
+              CHENILLE
+            </button>
+          </div>
+
+          <div class="fabric-catalog-grid" id="publicFabricCatalog"></div>
+
+          <p class="fabric-disclaimer">
+            Los colores son una referencia digital y pueden variar según la
+            pantalla, iluminación y textura real.
+          </p>
+        </div>
+      </section>
+
+      <!-- COTIZADOR -->
+      <section class="section quote-section" id="cotizar">
+        <div class="container quote-container">
+          <div class="section-heading">
+            <span class="section-eyebrow">EMPECEMOS</span>
+            <h2>COTIZA TU RESTAURACIÓN</h2>
+            <p>Cuéntanos qué necesitas. Te guiaremos paso a paso.</p>
+          </div>
+
+          <div class="quote-progress">
+            <div class="progress-item active">
+              <span>1</span><small>MUEBLE</small>
+            </div>
+            <div class="progress-line"></div>
+            <div class="progress-item">
+              <span>2</span><small>NECESIDAD</small>
+            </div>
+            <div class="progress-line"></div>
+            <div class="progress-item"><span>3</span><small>FOTOS</small></div>
+            <div class="progress-line"></div>
+            <div class="progress-item"><span>4</span><small>TELA</small></div>
+            <div class="progress-line"></div>
+            <div class="progress-item"><span>5</span><small>DATOS</small></div>
+          </div>
+
+          <form id="quoteForm" class="quote-form" novalidate>
+            <!-- PASO 1 -->
+            <section class="quote-step active" data-step="1">
+              <fieldset>
+                <legend>¿QUÉ MUEBLE QUIERES RESTAURAR?</legend>
+                <p class="form-helper">Selecciona una opción para comenzar.</p>
+
+                <div
+                  class="selection-grid furniture-grid"
+                  id="furnitureOptions"
+                >
+                  <label class="select-option"
+                    ><input type="radio" name="mueble" value="Sofá" /><span
+                      ><b>01</b><strong>SOFÁ</strong
+                      ><small
+                        >Sofás de diferentes tamaños y estilos.</small
+                      ></span
+                    ></label
+                  >
+                  <label class="select-option"
+                    ><input type="radio" name="mueble" value="Poltrona" /><span
+                      ><b>02</b><strong>POLTRONA</strong
+                      ><small
+                        >Poltronas, butacas y muebles individuales.</small
+                      ></span
+                    ></label
+                  >
+                  <label class="select-option"
+                    ><input type="radio" name="mueble" value="Silla" /><span
+                      ><b>03</b><strong>SILLA</strong
+                      ><small>Sillas tapizadas o decorativas.</small></span
+                    ></label
+                  >
+                  <label class="select-option"
+                    ><input type="radio" name="mueble" value="Comedor" /><span
+                      ><b>04</b><strong>COMEDOR</strong
+                      ><small>Sillas y componentes de comedor.</small></span
+                    ></label
+                  >
+                  <label class="select-option"
+                    ><input type="radio" name="mueble" value="Cabecero" /><span
+                      ><b>05</b><strong>CABECERO</strong
+                      ><small>Cabeceros y elementos tapizados.</small></span
+                    ></label
+                  >
+                  <label class="select-option"
+                    ><input type="radio" name="mueble" value="Otro" /><span
+                      ><b>06</b><strong>OTRO</strong
+                      ><small>Otro tipo de mueble.</small></span
+                    ></label
+                  >
+                </div>
+              </fieldset>
+            </section>
+
+            <!-- PASO 2 -->
+            <section class="quote-step" data-step="2">
+              <fieldset>
+                <legend id="needsTitle">¿QUÉ NECESITA TU MUEBLE?</legend>
+                <p class="form-helper">Puedes seleccionar varias opciones.</p>
+
+                <div class="selection-grid needs-grid">
+                  <label class="select-option"
+                    ><input
+                      type="checkbox"
+                      name="necesidad"
+                      value="Retapizado"
+                    /><span
+                      ><b>01</b><strong>RETAPIZADO</strong
+                      ><small>Cambio o renovación de tela.</small></span
+                    ></label
+                  >
+                  <label class="select-option"
+                    ><input
+                      type="checkbox"
+                      name="necesidad"
+                      value="Cambio de espuma o relleno"
+                    /><span
+                      ><b>02</b><strong>ESPUMA / RELLENO</strong
+                      ><small>Recuperar comodidad o firmeza.</small></span
+                    ></label
+                  >
+                  <label class="select-option"
+                    ><input
+                      type="checkbox"
+                      name="necesidad"
+                      value="Reparación estructural"
+                    /><span
+                      ><b>03</b><strong>REPARACIÓN</strong
+                      ><small>Estructura, piezas o uniones.</small></span
+                    ></label
+                  >
+                  <label class="select-option"
+                    ><input
+                      type="checkbox"
+                      name="necesidad"
+                      value="Restauración de madera"
+                    /><span
+                      ><b>04</b><strong>MADERA</strong
+                      ><small>Recuperación de componentes.</small></span
+                    ></label
+                  >
+                  <label class="select-option"
+                    ><input
+                      type="checkbox"
+                      name="necesidad"
+                      value="Pintura y acabados"
+                    /><span
+                      ><b>05</b><strong>ACABADOS</strong
+                      ><small>Pintura y terminaciones.</small></span
+                    ></label
+                  >
+                  <label class="select-option"
+                    ><input
+                      type="checkbox"
+                      name="necesidad"
+                      value="Restauración completa"
+                    /><span
+                      ><b>06</b><strong>RESTAURACIÓN COMPLETA</strong
+                      ><small>Renovación general.</small></span
+                    ></label
+                  >
+                  <label class="select-option"
+                    ><input
+                      type="checkbox"
+                      name="necesidad"
+                      value="No estoy seguro"
+                    /><span
+                      ><b>07</b><strong>NO ESTOY SEGURO</strong
+                      ><small>Te ayudamos a identificarlo.</small></span
+                    ></label
+                  >
+                  <label class="select-option"
+                    ><input
+                      type="checkbox"
+                      name="necesidad"
+                      value="Otro"
+                    /><span
+                      ><b>08</b><strong>OTRO</strong
+                      ><small>Cuéntanos qué necesitas.</small></span
+                    ></label
+                  >
+                </div>
+
+                <div class="field-block">
+                  <label for="descripcionProblema"
+                    >CUÉNTANOS QUÉ LE SUCEDE A TU MUEBLE</label
+                  >
+                  <textarea
+                    id="descripcionProblema"
+                    maxlength="800"
+                    rows="5"
+                    placeholder="Ejemplo: la tela está rota, los cojines están hundidos..."
+                  ></textarea>
+                  <div class="textarea-footer">
+                    <span>Opcional</span
+                    ><span><strong id="descriptionCount">0</strong>/800</span>
+                  </div>
+                </div>
+              </fieldset>
+            </section>
+
+            <!-- PASO 3 -->
+            <section class="quote-step" data-step="3">
+              <fieldset>
+                <legend>MUÉSTRANOS TU MUEBLE</legend>
+                <p class="form-helper">Agrega entre 1 y 5 fotografías.</p>
+
+                <div class="photo-upload">
+                  <input
+                    type="file"
+                    id="furniturePhotos"
+                    accept="image/jpeg,image/png,image/webp"
+                    multiple
+                    hidden
+                  />
+                  <div class="upload-icon">+</div>
+                  <strong>AGREGA FOTOGRAFÍAS</strong>
+                  <p>
+                    Incluye una foto completa y detalles de las zonas dañadas.
+                  </p>
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    id="selectPhotos"
+                  >
+                    SELECCIONAR FOTOS
+                  </button>
+                  <small>JPG, PNG o WEBP · Máximo 5 fotografías</small>
+                </div>
+
+                <div class="photo-tips">
+                  <div><b>01</b><span>Foto completa</span></div>
+                  <div><b>02</b><span>Zonas dañadas</span></div>
+                  <div><b>03</b><span>Buena iluminación</span></div>
+                </div>
+
+                <div
+                  id="photoPreviewSection"
+                  class="photo-preview-section"
+                  hidden
+                >
+                  <div class="preview-heading">
+                    <strong>FOTOGRAFÍAS SELECCIONADAS</strong>
+                    <span id="photoCounter">0 / 5</span>
+                  </div>
+                  <div id="photoPreview" class="photo-preview"></div>
+                </div>
+              </fieldset>
+            </section>
+
+            <!-- PASO 4 -->
+            <section class="quote-step" data-step="4">
+              <fieldset>
+                <legend>ELIGE UNA TELA</legend>
+                <p class="form-helper">
+                  Selecciona una referencia o solicita asesoría.
+                </p>
+
+                <label class="advice-option">
+                  <input type="radio" name="tela" value="ASESORIA" />
+                  <span>
+                    <b>?</b>
+                    <div>
+                      <strong>QUIERO ASESORÍA</strong>
+                      <small
+                        >Prefiero recibir una recomendación para mi
+                        mueble.</small
+                      >
+                    </div>
+                  </span>
+                </label>
+
+                <div class="fabric-filters" id="quoteFabricFilters">
+                  <button
+                    type="button"
+                    class="fabric-filter active"
+                    data-filter="Todos"
+                  >
+                    TODAS
+                  </button>
+                  <button
+                    type="button"
+                    class="fabric-filter"
+                    data-filter="Lino"
+                  >
+                    LINO
+                  </button>
+                  <button
+                    type="button"
+                    class="fabric-filter"
+                    data-filter="Micro-Suede"
+                  >
+                    MICRO-SUEDE
+                  </button>
+                  <button
+                    type="button"
+                    class="fabric-filter"
+                    data-filter="Chicago"
+                  >
+                    CHICAGO
+                  </button>
+                  <button
+                    type="button"
+                    class="fabric-filter"
+                    data-filter="Chenille"
+                  >
+                    CHENILLE
+                  </button>
+                </div>
+
+                <div id="quoteFabricCatalog" class="quote-fabric-grid"></div>
+
+                <p class="fabric-disclaimer">
+                  La muestra digital es orientativa. El tono real puede variar.
+                </p>
+              </fieldset>
+            </section>
+
+            <!-- PASO 5 -->
+            <section class="quote-step" data-step="5">
+              <fieldset>
+                <legend>¿CÓMO PODEMOS CONTACTARTE?</legend>
+                <p class="form-helper">
+                  Estos datos se usarán únicamente para atender tu solicitud.
+                </p>
+
+                <div class="customer-grid">
+                  <div class="input-group">
+                    <label for="clientName">NOMBRE *</label>
+                    <input
+                      id="clientName"
+                      type="text"
+                      maxlength="80"
+                      autocomplete="name"
+                      placeholder="Tu nombre"
+                    />
+                  </div>
+
+                  <div class="input-group">
+                    <label for="clientPhone">WHATSAPP *</label>
+                    <input
+                      id="clientPhone"
+                      type="tel"
+                      maxlength="20"
+                      autocomplete="tel"
+                      inputmode="tel"
+                      placeholder="Ej. 300 123 4567"
+                    />
+                  </div>
+
+                  <div class="input-group">
+                    <label for="clientEmail">CORREO</label>
+                    <input
+                      id="clientEmail"
+                      type="email"
+                      maxlength="120"
+                      autocomplete="email"
+                      placeholder="correo@ejemplo.com"
+                    />
+                  </div>
+
+                  <div class="input-group">
+                    <label for="clientZone">LOCALIDAD / ZONA *</label>
+                    <input
+                      id="clientZone"
+                      type="text"
+                      maxlength="100"
+                      placeholder="Ej. Suba, Bogotá"
+                    />
+                  </div>
+                </div>
+
+                <div class="field-block">
+                  <label for="clientNotes">INFORMACIÓN ADICIONAL</label>
+                  <textarea
+                    id="clientNotes"
+                    maxlength="500"
+                    rows="4"
+                    placeholder="Ejemplo: el mueble está en un tercer piso, quiero conservar el color de la madera..."
+                  ></textarea>
+                  <div class="textarea-footer">
+                    <span>Opcional</span
+                    ><span><strong id="notesCount">0</strong>/500</span>
+                  </div>
+                </div>
+
+                <label class="privacy-check">
+                  <input id="privacyAccepted" type="checkbox" />
+                  <span
+                    >Acepto que mis datos sean utilizados para atender esta
+                    solicitud de cotización.</span
+                  >
+                </label>
+
+                <div id="quoteSummary" class="quote-summary"></div>
+              </fieldset>
+            </section>
+
+            <div class="quote-actions">
+              <button
+                id="previousQuote"
+                class="btn btn-secondary"
+                type="button"
+                hidden
+              >
+                ANTERIOR
+              </button>
+              <button id="continueQuote" class="btn btn-red" type="button">
+                SIGUIENTE
+              </button>
+            </div>
+          </form>
+
+          <div
+            id="quoteMessage"
+            class="quote-message"
+            role="status"
+            aria-live="polite"
+            hidden
+          ></div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer id="contacto">
+      <div class="container footer-inner">
+        <div class="footer-grid">
+          <div class="footer-col-logo">
+            <img
+              class="footer-logo"
+              src="https://i.ibb.co/Cp3f4nt1/Logo-2.png"
+              alt="Logo-footer"
+            />
+          </div>
+          <div class="footer-col">
+            <strong>CONTÁCTANOS</strong>
+            <a href="mailto:lafabricajc@gmail.com">✉ lafabricajc@gmail.com</a>
+            <a href="tel:+573209488127">☎ +57 320 9488127</a>
+          </div>
+          <div class="footer-col">
+            <strong>UBICACIÓN</strong>
+            <span> Servicio a domicilio </span>
+            <span>⌖ Bogotá D.C., Colombia</span>
+          </div>
+          <div class="footer-col">
+            <strong>SÍGUENOS</strong>
+            <a
+              href="https://www.instagram.com/lafabricarf?utm_source=ig_web_button_share_sheet&rpxt=ZDNlZDc0MzIxNw=="
+              >◎ Instagram: @lafabricarf</a
+            >
+          </div>
+          <div class="footer-col">
+            <strong>RECURSOS</strong>
+            <a href="#inicio">Inicio</a>
+            <a href="#nosotros">¿Quiénes somos?</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#telas">Telas</a>
+            <a href="#cotizar">Cotiza</a>
+          </div>
+        </div>
+
+        <div class="footer-line"></div>
+
+        <div class="footer-bottom">
+          <small
+            >© 2026 La Fábrica Tapicería - Todos los derechos reservados</small
+          >
+          <small>Hecho en colaboración con Medsome Agency®</small>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      /* =========================================================
+   MENÚ
+   ========================================================= */
+
+      const menuBtn = document.querySelector(".menu-btn");
+      const mobileNav = document.querySelector(".mobile-nav");
+
+      menuBtn.addEventListener("click", () =>
+        mobileNav.classList.toggle("show")
+      );
+
+      document.querySelectorAll(".mobile-nav a").forEach((link) => {
+        link.addEventListener("click", () =>
+          mobileNav.classList.remove("show")
+        );
+      });
+
+      /* =========================================================
+   BASE DE TELAS
+   ========================================================= */
+
+      const fabrics = [
+        [
+          "TEL-001",
+          "Blanco Tiza / Marfil",
+          "Lino",
+          "#EBEBE6",
+          "Ideal para sofás modernos y cojinería",
+        ],
+        [
+          "TEL-002",
+          "Crema / Crudo",
+          "Micro-Suede",
+          "#ECEBE6",
+          "Perfecto para sillas de alto tráfico",
+        ],
+        ["TEL-003", "Marfil", "Chenille", "#E3E1DC", "Tejido de tacto suave"],
+        [
+          "TEL-004",
+          "Marfil",
+          "Chicago",
+          "#E2DFD7",
+          "Elegante para cabeceros y poltronas",
+        ],
+        [
+          "TEL-005",
+          "Gris Claro",
+          "Lino",
+          "#D6D7D2",
+          "Aporta luminosidad en tapicería recta",
+        ],
+        [
+          "TEL-006",
+          "Beige Cálido",
+          "Lino",
+          "#CEC5B9",
+          "Tono neutro para sofás de sala",
+        ],
+        [
+          "TEL-007",
+          "Chicago Sand / Arena",
+          "Chicago",
+          "#C2BAAF",
+          "Estilo refinado y suave",
+        ],
+        [
+          "TEL-008",
+          "Palo de Rosa / Rosado Pálido",
+          "Micro-Suede",
+          "#D0A59E",
+          "Excelente para butacas o acentos",
+        ],
+        [
+          "TEL-009",
+          "Chicago Rosa",
+          "Chicago",
+          "#BA7E84",
+          "Aterciopelado para muebles de acento",
+        ],
+        ["TEL-010", "Chicago Trigo", "Chicago", "#A39183", "Cálido y elegante"],
+        [
+          "TEL-011",
+          "Taupe / Topo",
+          "Lino",
+          "#908278",
+          "Diseño atemporal de textura visible",
+        ],
+        [
+          "TEL-012",
+          "Gris Azulado",
+          "Micro-Suede",
+          "#8A9BAA",
+          "Acabado tipo gamuza",
+        ],
+        [
+          "TEL-013",
+          "Terracota / Teja",
+          "Micro-Suede",
+          "#A05537",
+          "Aporta calidez en poltronas",
+        ],
+        ["TEL-014", "Terracota / Óxido", "Lino", "#8F4829", "Textura rústica"],
+        [
+          "TEL-015",
+          "Amarillo Mostaza",
+          "Micro-Suede",
+          "#EBB11B",
+          "Acabado mate para destacar muebles",
+        ],
+        [
+          "TEL-016",
+          "Mostaza / Dorado Terroso",
+          "Lino",
+          "#C48E28",
+          "Trama visible y cálida",
+        ],
+        [
+          "TEL-017",
+          "Verde Oliva / Pistacho Oscuro",
+          "Chenille",
+          "#5F5E33",
+          "Tejido tupido",
+        ],
+        [
+          "TEL-018",
+          "Verde Oliva / Musgo",
+          "Lino",
+          "#646959",
+          "Estilo natural e industrial",
+        ],
+        [
+          "TEL-019",
+          "Verde Esmeralda / Menta Oscuro",
+          "Micro-Suede",
+          "#26735E",
+          "Durabilidad indicada de 100.000 ciclos",
+        ],
+        [
+          "TEL-020",
+          "Verde Bosque / Oscuro",
+          "Lino",
+          "#1F3830",
+          "Atemporal y sobrio",
+        ],
+        [
+          "TEL-021",
+          "Azul Aguamarina / Grisáceo",
+          "Lino",
+          "#617B8A",
+          "Frescura en tela estructurada",
+        ],
+        [
+          "TEL-022",
+          "Azul Cielo / Cobalto Claro",
+          "Micro-Suede",
+          "#538BB8",
+          "Gamuza sintética suave",
+        ],
+        ["TEL-023", "Chicago Turquesa", "Chicago", "#42718E", "Brillo sutil"],
+        [
+          "TEL-024",
+          "Azul Denim / Grisáceo",
+          "Chenille",
+          "#516278",
+          "Trama entrelazada",
+        ],
+        [
+          "TEL-025",
+          "Azul Petróleo / Gris Oscuro",
+          "Lino",
+          "#334351",
+          "Estructurado para tapicería general",
+        ],
+        [
+          "TEL-026",
+          "Chicago Petróleo",
+          "Chicago",
+          "#283556",
+          "Apariencia sobria y elegante",
+        ],
+        ["TEL-027", "Azul Marino", "Micro-Suede", "#293B58", "Tono profundo"],
+        [
+          "TEL-028",
+          "Azul Marino Profundo",
+          "Lino",
+          "#1B2D42",
+          "Base oscura estructurada",
+        ],
+        [
+          "TEL-029",
+          "Chicago Rojo",
+          "Chicago",
+          "#B81D2A",
+          "Color intenso aterciopelado",
+        ],
+        [
+          "TEL-030",
+          "Rojo Quemado / Tinto",
+          "Micro-Suede",
+          "#881729",
+          "Tono cálido y profundo",
+        ],
+        [
+          "TEL-031",
+          "Chicago Gris",
+          "Chicago",
+          "#9C9B9E",
+          "Gris medio aterciopelado",
+        ],
+        [
+          "TEL-032",
+          "Chicago Gris Oscuro",
+          "Chicago",
+          "#4C4D52",
+          "Acabado oscuro y sofisticado",
+        ],
+      ].map(([id, nombre, material, color, descripcion]) => ({
+        id,
+        nombre,
+        material,
+        color,
+        descripcion,
+      }));
+
+      /* =========================================================
+   CATÁLOGOS
+   ========================================================= */
+
+      const publicCatalog = document.getElementById("publicFabricCatalog");
+      const quoteCatalog = document.getElementById("quoteFabricCatalog");
+
+      function getFilteredFabrics(filter) {
+        return filter === "Todos"
+          ? fabrics
+          : fabrics.filter((f) => f.material === filter);
+      }
+
+      function renderPublicCatalog(filter = "Todos") {
+        publicCatalog.innerHTML = getFilteredFabrics(filter)
+          .map(
+            (f) => `
+    <article class="fabric-card">
+      <div class="fabric-swatch" style="background:${f.color}"></div>
+      <div class="fabric-info">
+        <div class="fabric-meta"><b>${f.id}</b><span>${f.material}</span></div>
+        <h3>${f.nombre}</h3>
+        <p>${f.descripcion}</p>
+        <small>${f.color}</small>
+      </div>
+    </article>
+  `
+          )
+          .join("");
+      }
+
+      function renderQuoteCatalog(filter = "Todos") {
+        const selected = document.querySelector(
+          'input[name="tela"]:checked'
+        )?.value;
+
+        quoteCatalog.innerHTML = getFilteredFabrics(filter)
+          .map(
+            (f) => `
+    <label class="quote-fabric">
+      <input type="radio" name="tela" value="${f.id}" ${
+              selected === f.id ? "checked" : ""
+            }>
+      <span>
+        <i style="background:${f.color}"></i>
+        <div class="fabric-meta"><b>${f.id}</b><small>${
+              f.material
+            }</small></div>
+        <strong>${f.nombre}</strong>
+        <small>${f.color}</small>
+      </span>
+    </label>
+  `
+          )
+          .join("");
+      }
+
+      function configureFilters(containerId, renderFunction) {
+        document
+          .querySelectorAll(`#${containerId} .fabric-filter`)
+          .forEach((button) => {
+            button.addEventListener("click", () => {
+              document
+                .querySelectorAll(`#${containerId} .fabric-filter`)
+                .forEach((b) => b.classList.remove("active"));
+              button.classList.add("active");
+              renderFunction(button.dataset.filter);
+            });
+          });
+      }
+
+      /* =========================================================
+   COTIZADOR
+   ========================================================= */
+
+      const quoteForm = document.getElementById("quoteForm");
+      const quoteMessage = document.getElementById("quoteMessage");
+      const nextBtn = document.getElementById("continueQuote");
+      const previousBtn = document.getElementById("previousQuote");
+      const description = document.getElementById("descripcionProblema");
+      const descriptionCount = document.getElementById("descriptionCount");
+      const notes = document.getElementById("clientNotes");
+      const notesCount = document.getElementById("notesCount");
+      const needsTitle = document.getElementById("needsTitle");
+
+      let currentStep = 1;
+      let selectedPhotos = [];
+
+      const quoteData = {
+        mueble: "",
+        necesidades: [],
+        descripcion: "",
+        fotos: [],
+        tela: null,
+        cliente: {},
+      };
+
+      function message(text) {
+        quoteMessage.textContent = text;
+        quoteMessage.hidden = false;
+      }
+
+      function hideMessage() {
+        quoteMessage.hidden = true;
+      }
+
+      function showStep(step) {
+        document.querySelectorAll(".quote-step").forEach((el) => {
+          el.classList.toggle("active", Number(el.dataset.step) === step);
+        });
+
+        document.querySelectorAll(".progress-item").forEach((el, index) => {
+          el.classList.toggle("active", index + 1 <= step);
+        });
+
+        previousBtn.hidden = step === 1;
+        nextBtn.textContent = step === 5 ? "ENVIAR POR WHATSAPP" : "SIGUIENTE";
+        hideMessage();
+
+        if (step === 5) renderSummary();
+
+        document
+          .getElementById("cotizar")
+          .scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+
+      /* PASO 1 */
+
+      function validateStep1() {
+        const selected = quoteForm.querySelector(
+          'input[name="mueble"]:checked'
+        );
+
+        if (!selected) {
+          message("Selecciona el mueble que deseas restaurar.");
+          return false;
+        }
+
+        quoteData.mueble = selected.value;
+        needsTitle.textContent = `¿QUÉ NECESITA TU ${selected.value.toUpperCase()}?`;
+        return true;
+      }
+
+      /* PASO 2 */
+
+      function validateStep2() {
+        const selected = [
+          ...quoteForm.querySelectorAll('input[name="necesidad"]:checked'),
+        ];
+
+        if (!selected.length) {
+          message("Selecciona al menos una necesidad.");
+          return false;
+        }
+
+        quoteData.necesidades = selected.map((el) => el.value);
+        quoteData.descripcion = description.value.trim();
+        return true;
+      }
+
+      description.addEventListener("input", () => {
+        descriptionCount.textContent = description.value.length;
+      });
+
+      notes.addEventListener("input", () => {
+        notesCount.textContent = notes.value.length;
+      });
+
+      /* PASO 3 */
+
+      const photoInput = document.getElementById("furniturePhotos");
+      const selectPhotosBtn = document.getElementById("selectPhotos");
+      const preview = document.getElementById("photoPreview");
+      const previewSection = document.getElementById("photoPreviewSection");
+      const photoCounter = document.getElementById("photoCounter");
+
+      selectPhotosBtn.addEventListener("click", () => photoInput.click());
+
+      photoInput.addEventListener("change", (event) => {
+        const valid = [...event.target.files].filter((file) =>
+          ["image/jpeg", "image/png", "image/webp"].includes(file.type)
+        );
+
+        const available = 5 - selectedPhotos.length;
+
+        if (!available) {
+          message("Ya seleccionaste el máximo de 5 fotografías.");
+          photoInput.value = "";
+          return;
+        }
+
+        selectedPhotos.push(...valid.slice(0, available));
+        photoInput.value = "";
+        renderPhotos();
+
+        if (valid.length > available)
+          message("Solo puedes agregar máximo 5 fotografías.");
+      });
+
+      function renderPhotos() {
+        preview.innerHTML = "";
+
+        selectedPhotos.forEach((file, index) => {
+          const item = document.createElement("div");
+          item.className = "photo-item";
+
+          const img = document.createElement("img");
+          const url = URL.createObjectURL(file);
+          img.src = url;
+          img.alt = `Fotografía ${index + 1}`;
+          img.onload = () => URL.revokeObjectURL(url);
+
+          const remove = document.createElement("button");
+          remove.type = "button";
+          remove.innerHTML = "×";
+          remove.addEventListener("click", () => {
+            selectedPhotos.splice(index, 1);
+            renderPhotos();
+          });
+
+          item.append(img, remove);
+          preview.appendChild(item);
+        });
+
+        photoCounter.textContent = `${selectedPhotos.length} / 5`;
+        previewSection.hidden = !selectedPhotos.length;
+      }
+
+      function validateStep3() {
+        if (!selectedPhotos.length) {
+          message("Agrega al menos una fotografía del mueble.");
+          return false;
+        }
+
+        quoteData.fotos = [...selectedPhotos];
+        return true;
+      }
+
+      /* PASO 4 */
+
+      function validateStep4() {
+        const selected = quoteForm.querySelector('input[name="tela"]:checked');
+
+        if (!selected) {
+          message("Selecciona una tela o la opción de recibir asesoría.");
+          return false;
+        }
+
+        quoteData.tela =
+          selected.value === "ASESORIA"
+            ? { id: "ASESORIA", nombre: "Quiero asesoría", material: "" }
+            : fabrics.find((f) => f.id === selected.value);
+
+        return true;
+      }
+
+      /* PASO 5 */
+
+      function readCustomerData() {
+        return {
+          nombre: document.getElementById("clientName").value.trim(),
+          telefono: document.getElementById("clientPhone").value.trim(),
+          correo: document.getElementById("clientEmail").value.trim(),
+          zona: document.getElementById("clientZone").value.trim(),
+          observaciones: notes.value.trim(),
+        };
+      }
+
+      function validateStep5() {
+        const client = readCustomerData();
+        const privacy = document.getElementById("privacyAccepted").checked;
+
+        if (client.nombre.length < 2) {
+          message("Ingresa tu nombre.");
+          return false;
+        }
+
+        const phoneDigits = client.telefono.replace(/\D/g, "");
+
+        if (phoneDigits.length < 10) {
+          message("Ingresa un número de WhatsApp válido.");
+          return false;
+        }
+
+        if (
+          client.correo &&
+          !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(client.correo)
+        ) {
+          message("Revisa el correo electrónico ingresado.");
+          return false;
+        }
+
+        if (client.zona.length < 2) {
+          message("Indica tu localidad o zona.");
+          return false;
+        }
+
+        if (!privacy) {
+          message(
+            "Debes aceptar el tratamiento de los datos para enviar la solicitud."
+          );
+          return false;
+        }
+
+        quoteData.cliente = client;
+        return true;
+      }
+
+      /* RESUMEN */
+
+      function renderSummary() {
+        const client = readCustomerData();
+
+        document.getElementById("quoteSummary").innerHTML = `
+    <h3>RESUMEN DE TU SOLICITUD</h3>
+
+    <div class="summary-grid">
+      <div><small>MUEBLE</small><strong>${
+        quoteData.mueble || "—"
+      }</strong></div>
+      <div><small>TELA</small><strong>${
+        quoteData.tela?.nombre || "—"
+      }</strong></div>
+      <div><small>FOTOGRAFÍAS</small><strong>${
+        selectedPhotos.length
+      }</strong></div>
+      <div><small>NECESIDADES</small><strong>${
+        quoteData.necesidades.join(", ") || "—"
+      }</strong></div>
+    </div>
+
+    <p><strong>Descripción:</strong> ${
+      quoteData.descripcion || "Sin descripción adicional."
+    }</p>
+
+    ${client.nombre ? `<p><strong>Cliente:</strong> ${client.nombre}</p>` : ""}
+  `;
+      }
+
+      [
+        "clientName",
+        "clientPhone",
+        "clientEmail",
+        "clientZone",
+        "clientNotes",
+      ].forEach((id) => {
+        document.getElementById(id).addEventListener("input", () => {
+          if (currentStep === 5) renderSummary();
+        });
+      });
+
+      /* WHATSAPP */
+
+      function sendWhatsApp() {
+        const c = quoteData.cliente;
+        const fabric = quoteData.tela;
+
+        const text = [
+          "Hola, La Fábrica Tapicería.",
+          "",
+          "Quiero solicitar una cotización de restauración.",
+          "",
+          `*Nombre:* ${c.nombre}`,
+          `*WhatsApp:* ${c.telefono}`,
+          `*Zona:* ${c.zona}`,
+          c.correo ? `*Correo:* ${c.correo}` : "",
+          "",
+          `*Mueble:* ${quoteData.mueble}`,
+          `*Necesidades:* ${quoteData.necesidades.join(", ")}`,
+          `*Descripción:* ${
+            quoteData.descripcion || "Sin descripción adicional"
+          }`,
+          `*Tela:* ${
+            fabric.id === "ASESORIA"
+              ? "Solicito asesoría"
+              : `${fabric.id} - ${fabric.nombre} (${fabric.material})`
+          }`,
+          `*Fotografías seleccionadas:* ${selectedPhotos.length}`,
+          "",
+          c.observaciones ? `*Información adicional:* ${c.observaciones}` : "",
+          "",
+          "Tengo las fotografías del mueble listas para enviarlas por este chat.",
+        ]
+          .filter(Boolean)
+          .join("\n");
+
+        const url = `https://wa.me/573209488127?text=${encodeURIComponent(
+          text
+        )}`;
+        window.open(url, "_blank", "noopener,noreferrer");
+      }
+
+      /* NAVEGACIÓN */
+
+      nextBtn.addEventListener("click", () => {
+        if (currentStep === 1 && !validateStep1()) return;
+        if (currentStep === 2 && !validateStep2()) return;
+        if (currentStep === 3 && !validateStep3()) return;
+        if (currentStep === 4 && !validateStep4()) return;
+
+        if (currentStep === 5) {
+          if (!validateStep5()) return;
+          sendWhatsApp();
+          return;
+        }
+
+        currentStep++;
+        showStep(currentStep);
+      });
+
+      previousBtn.addEventListener("click", () => {
+        if (currentStep > 1) {
+          currentStep--;
+          showStep(currentStep);
+        }
+      });
+
+      quoteForm.addEventListener("submit", (event) => event.preventDefault());
+
+      /* INICIO */
+
+      renderPublicCatalog();
+      renderQuoteCatalog();
+      configureFilters("catalogFilters", renderPublicCatalog);
+      configureFilters("quoteFabricFilters", renderQuoteCatalog);
+      document.querySelectorAll(".quote-step").forEach((el) => {
+        el.classList.toggle("active", Number(el.dataset.step) === 1);
+      });
+      document.querySelectorAll(".progress-item").forEach((el, index) => {
+        el.classList.toggle("active", index + 1 <= 1);
+      });
+      previousBtn.hidden = true;
+      nextBtn.textContent = "SIGUIENTE";
+    </script>
+  </body>
+</html>
